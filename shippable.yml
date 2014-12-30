@@ -4,7 +4,7 @@ jdk:
    - openjdk7
    - oraclejdk7
    - openjdk6
-   - oraclejdk8
+  # - oraclejdk8
 
 build_image: shippableimages/ubuntu1204_java
 
@@ -23,3 +23,6 @@ after_success:
    - mvn clean cobertura:cobertura
    - mvn test
 archive: true
+
+notifications:
+  email: false
