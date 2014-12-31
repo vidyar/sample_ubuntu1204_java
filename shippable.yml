@@ -3,10 +3,10 @@ language: java
 jdk:
    - openjdk7
    - oraclejdk7
-  # - openjdk6
-  # - oraclejdk8
+   - openjdk6
+   - oraclejdk8
 
-build_image: shippableimages/ubuntu1204_java:0.0.1
+build_image: shippableimages/ubuntu1204_java
 
 before_install:
    - apt-get install -y maven
