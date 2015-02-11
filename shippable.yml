@@ -6,7 +6,7 @@ jdk:
    - openjdk6
    - oraclejdk8
 
-build_image: shippableimages/ubuntu1204_java:0.0.1
+build_image: shippableimages/ubuntu1204_java:0.0.2
 
 before_install:
    - apt-get update
@@ -19,6 +19,7 @@ before_script:
    - if [[ $SHIPPABLE_JDK_VERSION == "oraclejdk8" ]] ; then export JAVA_HOME="/usr/lib/jvm/java-8-oracle"; export PATH="$PATH:/usr/lib/jvm/java-8-oracle/bin"; export java_path="/usr/lib/jvm/java-8-oracle/jre/bin/java"; fi
    - update-alternatives --set java $java_path
    - java -version
+   - git --version
 
 after_success:
    - mvn clean cobertura:cobertura
