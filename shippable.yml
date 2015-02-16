@@ -6,7 +6,7 @@ jdk:
    - openjdk6
    - oraclejdk8
 
-build_image: shippableimages/ubuntu1204_java:0.0.2
+build_image: shippableimages/ubuntu1404_java
 
 #build_image: shippable/minv2
 
