@@ -8,6 +8,7 @@ jdk:
 
 build_image: shippableimages/ubuntu1404_java
 
+
 before_install:
    - apt-get update
    - apt-get install -y maven
