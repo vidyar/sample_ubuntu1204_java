@@ -28,4 +28,4 @@ after_success:
 archive: true
 
 notifications:
-  email: false
+  email: vidya@shippable.com
